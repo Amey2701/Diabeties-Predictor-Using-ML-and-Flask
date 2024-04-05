@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real Estate Price Predictor by Amey </title> <!-- Title of the webpage -->
+    <style>
+        /* CSS styles */
+        * {
+            font-size: 40px; /* Set font size for all elements */
+            font-family: Century; /* Set font family for all elements */
+        }
+        body {
+            background-color: lightyellow; /* Set background color for the body */
+        }
+    </style>
+</head>
+<body>
+    <center> <!-- Center align content -->
+        <h1>Real Estate Price Predictor</h1> <!-- Main heading -->
+        <form method="POST"> <!-- Form for user input -->
+            <label>Area</label> <!-- Label for area input -->
+            <input type="number" step="any" name="area" placeholder="Enter area" required min="1" /><br><br> <!-- Area input field -->
+            <label>Bedrooms</label> <!-- Label for bedrooms input -->
+            <input type="number" step="any" name="bedrooms" placeholder="Number of bedrooms" required min="1" /><br><br> <!-- Bedrooms input field -->
+            <input type="submit" value="Predict Price" /> <!-- Submit button -->
+        </form>
+        <h2>{{ msg }}</h2> <!-- Display prediction message -->
+    </center>
+</body>
+</html>
